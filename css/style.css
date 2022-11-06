@@ -36,9 +36,11 @@ ul,p,h1,h2,h3,h4 {
     color: var(--main-color);
     letter-spacing: 0.06em;
 }
-.order {
+.section.order {
     background-color: var(--order-color);
     text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
 }
 .header-list-link:hover {
     color: var(--aktive-color);
@@ -106,7 +108,6 @@ footer {
     border: none;
     margin-top: 30px;
     padding: 10px 32px;
-    margin-bottom: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     
@@ -177,6 +178,7 @@ footer {
     font-size: 16px;
     line-height: calc(26 / 16);
     padding: 6px 22px;
+    border-radius: 4px;
 }
 .button-flex li:not(:first-child) {
     margin-left: 8px;
@@ -185,6 +187,7 @@ footer {
     background-color: var(--aktive-color);
     color: var(--main-color);
     border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-name {
     font-weight: 700;
@@ -205,7 +208,6 @@ footer {
     text-align: center;
     max-width: 696px;
     margin: 0 auto;
-    padding: 200px 0 0 0;
 }
 .header-flex {
     display: flex;
@@ -224,7 +226,7 @@ footer {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 12px;
 }
 .header-list>li:not(:last-child) {
     margin-right: 50px;
@@ -241,7 +243,7 @@ margin-right: 30px;
     margin-left: -30px;
 }
 .features-flex .features-element {
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
     margin-left: 30px;
 }
 .what-to-do-flex {
@@ -250,7 +252,7 @@ margin-right: 30px;
     margin-left: -30px;
 }
 .what-to-do-flex .item {
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
     margin-left: 30px;
 }
 .tetle-text-what {
@@ -268,7 +270,10 @@ margin-right: 30px;
 }
 .team-flex-item {
     margin-left: 30px;
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
+}
+.team-flex-item > img {
+    display: block;
 }
 .team-flex>li {
 background-color: var(--main-color);
@@ -300,7 +305,7 @@ address {
     margin-left: -30px;
 }
 .work-flex .item {
-    width: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
 }
 .work-flex li {
@@ -317,7 +322,7 @@ address {
     margin-bottom: 20px;
     margin-top: 4px;
 }
-section {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
