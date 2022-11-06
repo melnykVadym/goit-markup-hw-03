@@ -5,35 +5,10 @@ body {
     padding: 0;
     background-color: var(--main-color);
 }
-ul {
+ul,p,h1,h2,h3,h4 {
     margin: 0;
     padding: 0;
 }
-li {
-    margin: 0;
-    padding: 0;
-}
-p {
-    margin: 0;
-    padding: 0;
-}
-h1 {
-    margin: 0;
-    padding: 0;
-}
-h2 {
-    margin: 0;
-    padding: 0;
-}
-h3 {
-    margin: 0;
-    padding: 0;
-}
-h4 {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --main-color: #FFFFFF;
     --aktive-color: #2196F3;
@@ -42,6 +17,7 @@ h4 {
     --order-color: #2F303A;
     --logo-color: #000000;
     --projects-color: #F5F4FA;
+    --button-hover: #188CE8;
 }
 .link {
     text-decoration: none;
@@ -131,6 +107,12 @@ footer {
     margin-top: 30px;
     padding: 10px 32px;
     margin-bottom: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+}
+.order-button:hover {   
+    background-color: var(--button-hover);
 }
 .contacts-footer {
     color: var(--contact-color);
@@ -242,6 +224,7 @@ footer {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .header-list>li:not(:last-child) {
     margin-right: 50px;
@@ -249,33 +232,43 @@ footer {
 header {
     padding: 24px 0;
 }
-.features-element:not(:last-child) {
+/* .features-element:not(:last-child) {
 margin-right: 30px;
-}
+} */
 .features-flex {
     display: flex;
-    margin-top: 94px;
+    margin-bottom: 118px;
+    margin-left: -30px;
+}
+.features-flex .features-element {
+    width: calc((100% - 90px) / 4);
+    margin-left: 30px;
 }
 .what-to-do-flex {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 94px;
-    justify-content: space-between;
+    margin-left: -30px;
+}
+.what-to-do-flex .item {
+    width: calc((100% - 60px) / 3);
+    margin-left: 30px;
 }
 .tetle-text-what {
     text-align: center;
-    margin-top: 94px;
 }
 .tetle-text-team {
     text-align: center;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 .team-flex {
     display: flex;
-    justify-content: space-between;
     text-align: center;
-    padding-bottom: 94px;
+
+    margin-left: -30px;
+}
+.team-flex-item {
+    margin-left: 30px;
+    width: calc((100% - 90px) / 4);
 }
 .team-flex>li {
 background-color: var(--main-color);
@@ -299,14 +292,16 @@ address {
 .button-flex {
     display: flex;
     justify-content: center;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .work-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 64px;
+    margin-left: -30px;
+}
+.work-flex .item {
+    width: calc((100% - 90px) / 3);
+    margin-left: 30px;
 }
 .work-flex li {
     border: 1px solid #EEEEEE;
@@ -322,3 +317,8 @@ address {
     margin-bottom: 20px;
     margin-top: 4px;
 }
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
